@@ -7,11 +7,11 @@
   line-height: 25px;
 }
 .head{
-  font-size: 50px;
-  color: black;
-  margin-left: 25px;
-  padding-top: -20;
-  margin-top: -20;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 100%;
+  color: white;
 }
 .navBar{
   background-color: grey;
@@ -91,7 +91,10 @@ display:inline-block;
 .floatRight{
   margin-left: 500px;
 }
-.banner{
+.image {
+   position: relative;
+   width: 100vw; /* for IE 6 */
+}
+#mainImg{
   width: 100vw;
-  height: 250px;
 }
