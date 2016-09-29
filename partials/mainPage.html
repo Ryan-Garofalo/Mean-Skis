@@ -30,6 +30,9 @@
 </div>
 <div ng-repeat="tea in view.data |orderBy:pricesort|filter:sort |filter:searchBox ">
   <div class="teaContainer">
+    <div class="inline left">
+      <img ng-src= '{{tea.imageUrl}}'>
+    </div>
     <div class="practiceRight">
       <h2 class="inline">{{tea.name}}</h2>
       <div>Price: {{tea.price /100 | currency:"$ "}}</div>
@@ -49,15 +52,7 @@
         <option value='4'>4</option>
       </select>
       <button ng-click="view.addToCart(quantity,tea)" id="addBag">Add to Bag</button>
-      <ul>
-
-      </ul>
-
     </div>
-    <div class="inline">
-      <img ng-src= '{{tea.imageUrl}}'>
-    </div>
-
   </div>
 </div>
 </div>

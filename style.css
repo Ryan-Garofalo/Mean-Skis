@@ -42,6 +42,9 @@ img{
   border-right: thin double black;
 }
 .teaContainer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
   border-style:solid;
   border-size:.5px;
   border-color:black;
@@ -51,9 +54,7 @@ img{
   margin-bottom: 10px;
   padding-bottom: 30px;
 }
-.practiceRight{
-  float:right;
-}
+
 .filters{
   margin-left: 20px;
   margin-right: 20px;
@@ -97,4 +98,10 @@ display:inline-block;
 }
 #mainImg{
   width: 100vw;
+}
+.left{
+  float:left;
+}
+.practiceRight{
+  margin-right: 20px;
 }
