@@ -1,0 +1,106 @@
+.guarantee{
+  width: 100vw;
+  height:25px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+}
+.head{
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 100%;
+  color: white;
+}
+.navBar{
+  background-color: grey;
+  height: 50px;
+  border-size:1px;
+  border-style:solid;
+  border-color:black;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:20px;
+}
+.inline{
+  display: inline-block;
+}
+.tableTop{
+  height: 30px;
+  border-size:.5px;
+  border-style:solid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: -15px;
+  border-bottom: none;
+}
+img{
+  width: 250px;
+  height: 250px;
+  border-style: solid;
+  border-right: thin double black;
+}
+.teaContainer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-style:solid;
+  border-size:.5px;
+  border-color:black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.filters{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#checkout{
+  float:right;
+  background-color: orange;
+}
+#sortBy{
+  width: 20px;
+  margin-right: 60px;
+}
+#information{
+  margin-left: 30vw;
+}
+#addBag{
+  background-color: yellow;
+}
+#mrT{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+#side{
+display:inline-block;
+}
+#pic{
+  height: 150px;
+  width:150px;
+  margin-left: 100px;
+}
+.floatRight{
+  margin-left: 500px;
+}
+.image {
+   position: relative;
+   width: 100vw; /* for IE 6 */
+}
+#mainImg{
+  width: 100vw;
+}
+.left{
+  float:left;
+}
+.practiceRight{
+  margin-right: 20px;
+}

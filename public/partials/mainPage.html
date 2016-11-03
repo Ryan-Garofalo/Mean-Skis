@@ -1,0 +1,64 @@
+<div class="filters">
+  <div class="inline"><label>Search by Category</label></div>
+  <select ng-model="sort">
+    <option value="">No Filter</option>
+    <option value="dark">Camber</option>
+    <option value="cold">Rocker</option>
+    <option value="awesome">All-Mountain</option> -->
+    <option value="dry">Freestyle</option> -->
+    <option value="hot">Halfpipe</option>
+    <option value="hot">Park</option>
+    <option value="summer">Beginner</option>
+    <option value="lucid">Deep-Pow</option>
+    <option value="warm">Racing</option>
+    <option value="winter">Shaped</option>
+    <option value="winter">Stiff</option>
+    <option value="winter">Early-Rise</option>
+    <option value="winter">Backcountry</option>
+  </select>
+  <label>Price</label>
+  <div class="inline" id="sortBy">
+    <select ng-model="pricesort">
+      <option>No filter</option>
+      <option value="price">Lowest</option>
+      <option value="-price">Highest</option>
+    </select>
+  </div>
+  <label>Search by Name</label>
+   <input type="text" class="inline" placeholder="Search" ng-model="searchBox">
+  <button class="inline" id="checkout" ng-click="view.checkout()">Check Out Bag:  {{view.shoppingCart}}</button>
+</div>
+
+<div class="tableTop">
+  <div class="inline">Ski</div>
+  <div class="inline" id="information">information</div>
+
+</div>
+<div ng-repeat="tea in view.data |orderBy:pricesort|filter:sort |filter:searchBox ">
+  <div class="teaContainer">
+    <div class="inline left">
+      <img ng-src= '{{tea.imageUrl}}'>
+    </div>
+    <div class="practiceRight">
+      <h2 class="inline">{{tea.name}}</h2>
+      <div>Price: {{tea.price /100 | currency:"$ "}}</div>
+      <!-- <div>User Rating: {{tea.caffeineScale}}</div> -->
+      <div>Style: {{tea.ingredients}}</div>
+      <div>rating: {{tea.rating}}</div>
+      <div>In Stock: {{tea.inStock== true ? "yes" : "no"}}</div>
+      <div>Categories:</div>
+      <div ng-repeat="cat in tea.categories">
+           <li>{{cat}}</li>
+      </div>
+      <h3 class="inline">Quantity</h3>
+      <select ng-model="quantity">
+        <option value='1'>1</option>
+        <option value='2'>2</option>
+        <option value='3'>3</option>
+        <option value='4'>4</option>
+      </select>
+      <button ng-click="view.addToCart(quantity,tea)" id="addBag">Add to Bag</button>
+    </div>
+  </div>
+</div>
+</div>
