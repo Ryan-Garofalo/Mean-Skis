@@ -11,7 +11,7 @@ app.factory("teaDataFactory", function($http){
             "rating": 1,
             "imageUrl": "http://content.backcountry.com/images/items/900/DPK/DPK000B/MDBL.jpg",
             "__v": 0,
-            "categories": [ "Park", "Half Pipe","Camber"]
+            "categories": [ "Park", "Halfpipe","Camber"]
         },
 
         {
@@ -24,7 +24,7 @@ app.factory("teaDataFactory", function($http){
             "rating": 5,
             "imageUrl": "http://content.backcountry.com/images/items/900/FTS/FTS002T/ONECOL.jpg",
             "__v": 0,
-            "categories": ["Freestyle", "Half Pipe", "Park"]
+            "categories": ["Freestyle", "Halfpipe", "Park"]
         },
         {
             "_id": "55c8ee82152165d244b98302",
@@ -60,7 +60,7 @@ app.factory("teaDataFactory", function($http){
             "rating": 1,
             "imageUrl": "http://content.backcountry.com/images/items/900/HEA/HEA001V/ONECOL.jpg",
             "__v": 0,
-            "categories": ["Deep-Pow","All-Mountain","backcountry"]
+            "categories": ["Deep-Pow","All-Mountain","Backcountry"]
         },
         {
             "_id": "55c8ee82152165d244b98305",
@@ -120,7 +120,7 @@ app.factory("teaDataFactory", function($http){
             "rating": 2,
             "imageUrl": "http://content.backcountry.com/images/items/900/SAL/SAL00JT/WHI.jpg",
             "__v": 0,
-            "categories": ["All-Mountain", "Deep-Pow","backcountry"]
+            "categories": ["All-Mountain", "Deep-Pow","Backcountry"]
         }
     ]
   }
