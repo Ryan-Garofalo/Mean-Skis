@@ -1,3 +1,5 @@
+
+
 .guarantee{
   width: 100vw;
   height:25px;
@@ -7,6 +9,7 @@
   line-height: 25px;
 }
 .head{
+  font-family: 'Open Sans Condensed', sans-serif;
   position: absolute;
   top: 25px;
   left: 10px;
