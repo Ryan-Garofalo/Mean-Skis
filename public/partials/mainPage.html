@@ -26,7 +26,7 @@
   </div>
   <label class="open">Search by Name:</label>
    <input type="text" class="inline" placeholder="Search" ng-model="searchBox">
-  <button class="inline button open" id="checkout" ng-click="view.checkout()">Check Out Bag:  {{view.shoppingCart}}</button>
+  <button class="inline button open" id="checkout" ng-click="view.checkout()">Check Out | Bag:  {{view.shoppingCart}}</button>
 </div>
 
 <table>
@@ -34,7 +34,6 @@
     <th>Ski</th>
     <th>Information</th>
     <th></th>
-    </th>
   </thead>
 <tbody>
 <tr ng-repeat="tea in view.data |orderBy:pricesort|filter:sort |filter:searchBox ">
