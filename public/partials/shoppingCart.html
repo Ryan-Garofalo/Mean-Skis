@@ -3,17 +3,16 @@
 
 <table>
   <thead>
-    <th>Ski</th>
+    <th class="spaceLeft">Ski</th>
     <th>Information</th>
-    <th>SubTotal</th>
+    <th class="right">SubTotal</th>
   </thead>
   <tbody>
     <tr ng-repeat="tea in view.data |orderBy:pricesort|filter:sort |filter:searchBox ">
-
       <td>
         <img ng-src= '{{tea.imageUrl}}'>
       </td>
-      <td>
+      <td class="spaceLeft">
         <h1 class="inline">{{tea.name}}</h1>
         <div>Price: {{tea.price /100 | currency:"$ "}}</div>
         <div>Caffeine Scale: {{tea.caffeineScale}}</div>
@@ -28,7 +27,6 @@
         </ul>
       </td>
       <td>
-      <div class="inline floatRight">
         <h1 class="inline">Quantity: {{tea.quantity}}</h1>
         <select ng-model="quantity" ng-show="view.toggle">
           <option value='1'>1</option>
@@ -43,4 +41,4 @@
       </td>
     </tr>
   </tbody>
-</table
+</table>

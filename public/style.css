@@ -148,6 +148,13 @@ table{
   margin:0 auto 0 auto;
   font-family: 'Open Sans Condensed', sans-serif;
 }
-th,td{
+tr{
     border-bottom:1px solid black;
+}
+.right{
+  float: right;
+  margin-right: 10px;
+}
+.spaceLeft{
+  margin-left: 50px;
 }
